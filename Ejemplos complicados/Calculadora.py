@@ -78,10 +78,12 @@ class Calculadora(QMainWindow):
         grid_bottom.addWidget(QPushButton("+"), 4, 3)
 
         #Fila6
-        grid_bottom.addWidget(QPushButton("+ / -"), 4, 0)
-        grid_bottom.addWidget(QPushButton("0"), 4, 1)
-        grid_bottom.addWidget(QPushButton("."), 4, 2)
-        grid_bottom.addWidget(QPushButton("="), 4, 3)
+        grid_bottom.addWidget(QPushButton("+ / -"), 5, 0)
+        grid_bottom.addWidget(QPushButton("0"), 5, 1)
+        grid_bottom.addWidget(QPushButton("."), 5, 2)
+        btn_igual = QPushButton("=")
+        btn_igual.setStyleSheet("background-color: lightblue; color: black;")
+        grid_bottom.addWidget( btn_igual, 5, 3)
 
         for i in range(grid_bottom.count()):
             grid_bottom.itemAt(i).widget().setSizePolicy(
